@@ -184,13 +184,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="82" horizontalPageScroll="10" verticalLineScroll="82" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9X-RZ-IZd">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="62" horizontalPageScroll="10" verticalLineScroll="62" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9X-RZ-IZd">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <clipView key="contentView" drawsBackground="NO" id="sGk-TZ-VT8">
                                     <rect key="frame" x="1" y="1" width="448" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="80" viewBased="YES" id="IGO-9z-McE">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="60" viewBased="YES" id="IGO-9z-McE">
                                             <rect key="frame" x="0.0" y="0.0" width="448" height="298"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -210,26 +210,40 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="upK-No-nWw">
-                                                            <rect key="frame" x="1" y="1" width="445" height="32"/>
+                                                        <tableCellView id="zha-xf-YKg">
+                                                            <rect key="frame" x="1" y="1" width="445" height="38"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koc-DS-bx9">
-                                                                    <rect key="frame" x="0.0" y="-5" width="445" height="42"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="KeU-8q-ftO">
-                                                                        <font key="font" size="24" name="AvenirNext-Regular"/>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjF-ki-Dqj">
+                                                                    <rect key="frame" x="65" y="-5" width="380" height="48"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="48" id="6Bd-HY-no2"/>
+                                                                    </constraints>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="24b-54-P1h">
+                                                                        <font key="font" size="20" name="AvenirNext-Regular"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOC-el-P9m">
+                                                                    <rect key="frame" x="8" y="2" width="51" height="35"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="51" id="5bB-mN-pZg"/>
+                                                                        <constraint firstAttribute="height" constant="35" id="JHp-fT-daX"/>
+                                                                    </constraints>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="nssl0049" id="kbn-Tp-leh"/>
+                                                                </imageView>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="koc-DS-bx9" firstAttribute="centerY" secondItem="upK-No-nWw" secondAttribute="centerY" id="AxE-gx-EZY"/>
-                                                                <constraint firstItem="koc-DS-bx9" firstAttribute="leading" secondItem="upK-No-nWw" secondAttribute="leading" constant="2" id="pOv-S2-7Wp"/>
-                                                                <constraint firstItem="koc-DS-bx9" firstAttribute="centerX" secondItem="upK-No-nWw" secondAttribute="centerX" id="zCc-mn-UHi"/>
+                                                                <constraint firstItem="pOC-el-P9m" firstAttribute="leading" secondItem="zha-xf-YKg" secondAttribute="leading" constant="8" id="A1Q-BN-8n6"/>
+                                                                <constraint firstAttribute="trailing" secondItem="KjF-ki-Dqj" secondAttribute="trailing" constant="2" id="Z5U-32-Kcf"/>
+                                                                <constraint firstItem="pOC-el-P9m" firstAttribute="centerY" secondItem="zha-xf-YKg" secondAttribute="centerY" id="a2u-wT-FhY"/>
+                                                                <constraint firstItem="KjF-ki-Dqj" firstAttribute="leading" secondItem="pOC-el-P9m" secondAttribute="trailing" constant="8" id="bZd-gU-0oF"/>
+                                                                <constraint firstItem="KjF-ki-Dqj" firstAttribute="centerY" secondItem="zha-xf-YKg" secondAttribute="centerY" id="bdq-3c-scH"/>
                                                             </constraints>
                                                             <connections>
-                                                                <outlet property="textField" destination="koc-DS-bx9" id="WPv-YB-ZZL"/>
+                                                                <outlet property="imageView" destination="pOC-el-P9m" id="rYG-gM-QyN"/>
+                                                                <outlet property="textField" destination="KjF-ki-Dqj" id="Sm7-e7-FpJ"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -297,4 +311,7 @@
             <point key="canvasLocation" x="415" y="1164"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nssl0049" width="1182" height="768"/>
+    </resources>
 </document>
